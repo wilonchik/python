@@ -88,3 +88,38 @@ sorted_list_reverse = sorted(my_list, reverse=True)
 print(sorted_list)       # Вывод: [1, 1, 2, 3, 4, 5, 6, 9]
 print(sorted_list_reverse) # Вывод: [9, 6, 5, 4, 3, 2, 1, 1]
 ```
+# " ".join()
+
+1. Объединение списка строк:
+```python
+words = ["This", "is", "a", "sentence."]
+sentence = " ".join(words)
+print(sentence) # Вывод: This is a sentence.
+```
+
+Здесь пробел (" ") используется в качестве разделителя.
+
+2. Объединение списка чисел (после преобразования в строки):
+```python
+numbers = [1, 2, 3, 4, 5]
+number_string = ", ".join(map(str, numbers)) # map(str, numbers) преобразует числа в строки
+print(number_string) # Вывод: 1, 2, 3, 4, 5
+```
+
+Обратите внимание на использование функции `map(str, numbers)` для преобразования чисел в строки, так как `join()` работает только со строками.
+
+3. Использование пустой строки для конкатенации:
+```python
+parts = ["Hello", "world"]
+combined = "".join(parts)
+print(combined) # Вывод: HelloWorld
+```
+
+Пустая строка "" используется для объединения без разделителя.
+
+4. Объединение строк с другим разделителем:
+```python
+items = ["apple", "banana", "cherry"]
+result = "-".join(items)
+print(result) # Вывод: apple-banana-cherry
+```
