@@ -1,11 +1,11 @@
-# title()
+# `title()`
 
 ``` python
 string = "hello world"
 titled_string = string.title()
 print(titled_string) # Вывод: Hello World
 ```
-# type()
+# `type()`
 
 
 ```python
@@ -27,7 +27,7 @@ print(type(num).__name__)     # Вывод: int
 print(type(string).__name__) # Вывод: str
 print(type(my_list).__name__) # Вывод: list
 ```
-# islower()
+# `islower()`
 
 ```python
 string1 = "hello"
@@ -38,7 +38,7 @@ print(string1.islower()) # Вывод: True
 print(string2.islower()) # Вывод: False
 print(string3.islower()) # Вывод: False
 ```
-# isupper()
+# `isupper()`
 ```python
 string1 = "HELLO"
 string2 = "Hello"
@@ -48,7 +48,7 @@ print(string1.isupper()) # Вывод: True
 print(string2.isupper()) # Вывод: False
 print(string3.isupper()) # Вывод: False
 ```
-# re.sub() (из модуля re)
+# `re.sub() (из модуля re)`
 
 ```python
 import re
@@ -58,7 +58,7 @@ new_string = re.sub(r"hello", "hi", string, flags=re.IGNORECASE)
 print(new_string) # Вывод: Hi world, hi Python!
 print(re.sub(r'[^a-zA-Z0-9]', '', string))#Вывод:HelloworldhelloPython
 ```
-# count()
+# `count()`
 
 
 ```python
@@ -69,7 +69,7 @@ count_abc = string.count("abc")
 print(count_a)    # Вывод: 3
 print(count_abc) # Вывод: 3
 ```
-# set()
+# `set()`
 
 
 ```python
@@ -77,7 +77,7 @@ my_list = [1, 2, 2, 3, 4, 4, 5]
 my_set = set(my_list)
 print(my_set) # Вывод: {1, 2, 3, 4, 5}
 ```
-# sorted()
+# `sorted()`
 
 
 ```python
@@ -88,7 +88,7 @@ sorted_list_reverse = sorted(my_list, reverse=True)
 print(sorted_list)       # Вывод: [1, 1, 2, 3, 4, 5, 6, 9]
 print(sorted_list_reverse) # Вывод: [9, 6, 5, 4, 3, 2, 1, 1]
 ```
-# " ".join()
+# `" ".join()`
 
 1. Объединение списка строк:
 ```python
