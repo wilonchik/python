@@ -123,3 +123,35 @@ items = ["apple", "banana", "cherry"]
 result = "-".join(items)
 print(result) # Вывод: apple-banana-cherry
 ```
+# `isdigit()`
+
+```python
+string1 = "12345"
+string2 = "123abc"
+string3 = "12.34" # Точка не является цифрой
+string4 = "-123" # Минус не является цифрой
+string5 = ""       # Пустая строка
+
+print(string1.isdigit()) # Вывод: True
+print(string2.isdigit()) # Вывод: False
+print(string3.isdigit()) # Вывод: False
+print(string4.isdigit()) # Вывод: False
+print(string5.isdigit()) # Вывод: False
+```
+
+# `isalpha()`
+
+
+```python
+string1 = "hello"
+string2 = "Hello World" # Пробел делает результат False
+string3 = "Hello123"     # Цифры делают результат False
+string4 = "你好世界"   # Работает с нелатинскими алфавитами
+string5 = ""             # Пустая строка
+
+print(string1.isalpha()) # Вывод: True
+print(string2.isalpha()) # Вывод: False
+print(string3.isalpha()) # Вывод: False
+print(string4.isalpha()) # Вывод: True
+print(string5.isalpha()) # Вывод: False
+```
